@@ -1,2 +1,2 @@
 import { someFn } from './test';
-someFn('privet');
+someFn('privet braza');
