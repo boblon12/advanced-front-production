@@ -1,0 +1,5 @@
+{
+  "editor.tabCompletion": "onlySnippets",
+  "editor.snippetSuggestions": "top",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
