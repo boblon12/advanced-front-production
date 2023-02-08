@@ -4,6 +4,11 @@ import { RuleSetRule } from "webpack"
 
 export function buildLoaders ({isDev}: BuildOptions) : RuleSetRule[] {
 
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack']
+  }
+
     //Если не успользуем тс, нужно подключать babel,
     //В тс лоадере jsx формат идет из коробки
     const tsloader = {
@@ -32,9 +37,20 @@ export function buildLoaders ({isDev}: BuildOptions) : RuleSetRule[] {
         "sass-loader",
       ],
     }
+
+    const fileLoader = {
+      test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+      use: [
+          {
+              loader: 'file-loader'
+          }
+      ]
+    }
        
     return [
+        fileLoader, 
+        svgLoader,
         tsloader,
-        cssloader
+        cssloader,   
       ]
 }
