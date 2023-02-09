@@ -5,7 +5,8 @@ export function classNames (cls?: string, mods?: Mods, additional?: string[]): s
   return [
     cls,
     ...additional.filter(Boolean),
-    ...Object.entries(mods).filter(([key, value]) => Boolean(value)).map(([key, value]) => key)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    ...Object.entries(mods).filter(([_, value]) => Boolean(value)).map(([key]) => key)
   ].join(' ')
 }
 

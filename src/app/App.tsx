@@ -5,7 +5,6 @@ import { Navbar } from 'widgets/Navbar';
 import { useTheme } from './providers/ThemeProvider';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
 
 const App = () => {
   const { theme } = useTheme();

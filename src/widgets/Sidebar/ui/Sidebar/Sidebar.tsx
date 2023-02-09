@@ -6,19 +6,18 @@ import { LangSwitcher } from 'features/LangSwitcher/ui/LangSwitcher';
 import { useTranslation } from 'react-i18next';
 
 interface SidebarProps {
-  className?: string;
+  classname?: string;
 }
 
-export const Sidebar: React.FC<SidebarProps> = (props) => {
+export const Sidebar: React.FC<SidebarProps> = ({ classname }) => {
   const { t } = useTranslation();
-  const { className } = props;
   const [collapsed, setCollapsed] = useState<boolean>(false);
   const toggleCollapse = () => setCollapsed((prev) => !prev);
 
   return (
     <div
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
-        className,
+        classname,
       ])}
     >
       <button onClick={toggleCollapse}>{t('toggle')}</button>
