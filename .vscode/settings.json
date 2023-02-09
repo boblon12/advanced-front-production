@@ -3,5 +3,9 @@
   "editor.snippetSuggestions": "top",
   "typescript.tsdk": "node_modules/typescript/lib",
   "i18n-ally.localesPaths": "./public/locales",
-  "i18n-ally.keystyle": "nested"
+  "i18n-ally.keystyle": "nested",
+  "stylelint.enable": true,
+  "css.validate": true,
+  "scss.validate": true,
+  "stylelint.validate": ["css", "scss"]
 }
