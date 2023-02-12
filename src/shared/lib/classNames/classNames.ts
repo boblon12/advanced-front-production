@@ -1,13 +1,17 @@
 type Mods = Record<string, boolean | string>
 
 
-export function classNames (cls?: string, mods?: Mods, additional?: string[]): string{
+export function classNames(
+  className: string,
+  modes: Mods | undefined = {},
+  additional: Array<string|undefined> = [],
+)
+: string {
   return [
-    cls,
-    ...additional.filter(Boolean),
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    ...Object.entries(mods).filter(([_, value]) => Boolean(value)).map(([key]) => key)
-  ].join(' ')
+    className, ...additional.filter(Boolean), ...Object.entries(modes)
+      .filter(([className, value]) => (value ? className : null))
+      .map(([className]) => className),
+  ].join(' ');
 }
 
  

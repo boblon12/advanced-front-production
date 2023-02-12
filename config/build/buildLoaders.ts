@@ -24,7 +24,7 @@ export function buildLoaders ({isDev}: BuildOptions) : RuleSetRule[] {
         loader: 'babel-loader',
         options: {
           presets: [
-            ['@babel/preset-env']
+            ['@babel/preset-env',  "@babel/preset-typescript"]
           ],
           "plugins": [
             ["i18next-extract", { nsSeparator: "~", locales: ["en", "ru"] }]
