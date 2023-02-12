@@ -17,21 +17,25 @@ export function buildLoaders ({isDev}: BuildOptions) : RuleSetRule[] {
         exclude: /node_modules/,
       }
 
-    const babelLoader =  {
-      test: /\.(js|jsx|tsx)$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: [
-            ['@babel/preset-env',  "@babel/preset-typescript"]
-          ],
-          "plugins": [
-            ["i18next-extract", { nsSeparator: "~", locales: ["en", "ru"] }]
-          ]
-        }
-      }
-    }
+      const babelLoader = {
+        test: /\.(js|jsx|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+            loader: 'babel-loader',
+            options: {
+                presets: ['@babel/preset-env'],
+                plugins: [
+                    [
+                        'i18next-extract',
+                        {
+                            locales: ['ru', 'en'],
+                            keyAsDefaultValue: true,
+                        },
+                    ],
+                ],
+            },
+        },
+    };
     const cssloader =  {
       test: /\.s[ac]ss$/i,
       use: [

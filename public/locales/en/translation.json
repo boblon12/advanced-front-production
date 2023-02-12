@@ -2,5 +2,7 @@
   "main": "Main",
   "about": "About",
   "toggle": "Collapse",
-  "language-long": "Translate"
+  "language-long": "Translate",
+  "NotFoundPage": "Page not found",
+  "loading": "Loading"
 }

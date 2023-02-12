@@ -35,7 +35,7 @@
     "react/prop-types": 1,
     "no-console": 2,
     "react/react-in-jsx-scope": "off",
-    "react/display-name": 1,
+    "react/display-name": "off",
     "i18next/no-literal-string": ["error", { "markupOnly": true }]
   },
   "globals": {

@@ -2,5 +2,7 @@
   "main": "Главная",
   "about": "Информация",
   "toggle": "Разреврнуть",
-  "language-long": "Перевести"
+  "language-long": "Перевести",
+  "NotFoundPage": "Страница не найдена",
+  "loading": "Загрузка"
 }

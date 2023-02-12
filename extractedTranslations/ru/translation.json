@@ -1,8 +1,10 @@
 {
+  "NotFoundPage": "",
   "about": "",
   "about-page": "",
   "language-long": "",
   "language-short": "",
+  "loading": "loading",
   "main": "",
   "main-page": "",
   "toggle": ""
