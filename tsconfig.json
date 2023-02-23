@@ -41,5 +41,13 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "./webpack.config.ts",
+    "./config/**/*.ts",
+    "./config/**/*.tsx",
+    "./config/jest/setupTests.ts"
+  ]
 }

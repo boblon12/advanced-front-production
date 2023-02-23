@@ -1,4 +1,5 @@
-import { classNames } from "./classNames";
+import { classNames } from 'shared/lib/classNames';
+
 describe('classname style test', () => {
     test('classNames function', () => {
       expect(classNames('someClass', {}, [])).toBe('someClass');
