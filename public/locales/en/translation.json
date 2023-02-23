@@ -4,5 +4,7 @@
   "toggle": "Collapse",
   "language-long": "Translate",
   "NotFoundPage": "Page not found",
-  "loading": "Loading"
+  "loading": "Loading",
+  "error-boundary": "Something went wrong",
+  "reload-page": "Reload page"
 }

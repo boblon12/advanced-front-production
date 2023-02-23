@@ -2,10 +2,13 @@
   "NotFoundPage": "",
   "about": "",
   "about-page": "",
+  "error-boundary": "error-boundary",
   "language-long": "",
   "language-short": "",
   "loading": "loading",
   "main": "",
   "main-page": "",
+  "reload-page": "reload-page",
+  "throw-error": "throw-error",
   "toggle": ""
 }
