@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
     checks:
-      runs-on: ubuntu-latest
+      runs-on: macos-latest
       strategy:
         matrix:
           node-version: [ 17.x ]
@@ -21,7 +21,7 @@ jobs:
         - name: build production project
           run: npm run build:prod
           if: always()
-        - name: elinting
+        - name: eslinting
           run: npm run eslint
           if: always()
         - name: linting css

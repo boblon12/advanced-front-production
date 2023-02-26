@@ -12,6 +12,7 @@
 /build
 /.next
 /next
+/storybook-static
 
 # misc
 .DS_Store
