@@ -1,11 +1,17 @@
 .appLink {
+  color: var(--inverted-primary-color);
   text-decoration: none;
+  font-style: oblique;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .primary {
   color: var(--inverted-primary-color);
 }
 
-.secondary {
+.inverted {
   color: var(--inverted-primary-color);
 }
