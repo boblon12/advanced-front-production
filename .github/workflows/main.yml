@@ -6,10 +6,10 @@ on:
     branches: [ main ]
 jobs:
     checks:
-      runs-on: macos-latest
+      runs-on: windows-2019
       strategy:
         matrix:
-          node-version: [ 17.x ]
+          node-version: [ 16.x ]
       steps:
         - uses: actions/checkout@v2
         - name: Staring Node.js ${{ matrix.node-version }}
@@ -18,6 +18,12 @@ jobs:
             node-version: ${{ matrix.node-version }}
         - name: install modules
           run: npm ci --force
+        - name: build storybook
+          run: npm run storybook:build
+          if: always()
+        - name: ui testing
+          run: npm run test:ui:ci
+          if: always()
         - name: build production project
           run: npm run build:prod
           if: always()
@@ -29,10 +35,4 @@ jobs:
           if: always()
         - name: unit testing
           run: npm run test:unit
-          if: always()
-        - name: build storybook
-          run: npm run storybook:build
-          if: always()
-        - name: ui testing
-          run: npm run test:ui:ci
           if: always()
