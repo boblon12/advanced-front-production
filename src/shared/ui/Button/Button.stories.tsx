@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonSize, ButtonTheme } from './Button';
 import { ThemeDecorator } from 'shared/config/storybook/decorators/ThemeDecorator';
 import { Theme } from 'shared/const/theme';
 
@@ -14,22 +14,38 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const PrimaryDark = Template.bind({});
+PrimaryDark.args = {
   children: 'TEXT',
 };
-Primary.decorators = [ThemeDecorator(Theme.DARK)];
+PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-export const Clear = Template.bind({});
-Clear.args = {
+export const ClearDark = Template.bind({});
+ClearDark.args = {
   children: 'TEXT',
-  theme: ThemeButton.CLEAR,
+  theme: ButtonTheme.CLEAR,
 };
 
-export const Outline = Template.bind({});
-Outline.args = {
+export const OutlineDark = Template.bind({});
+OutlineDark.args = {
   children: 'TEXT',
-  theme: ThemeButton.OUTLINE,
+  theme: ButtonTheme.OUTLINE,
+};
+
+export const BackgroundDark = Template.bind({});
+BackgroundDark.args = {
+  children: '>',
+  theme: ButtonTheme.BACKGROUND,
+  size: ButtonSize.XL,
+  square: true,
+};
+
+export const BackgroundInvertedDark = Template.bind({});
+BackgroundInvertedDark.args = {
+  children: '>',
+  theme: ButtonTheme.INVERTED_BACKGROUND,
+  size: ButtonSize.XL,
+  square: true,
 };
 
 export const PrimaryLight = Template.bind({});
@@ -41,13 +57,31 @@ PrimaryLight.decorators = [ThemeDecorator(Theme.LIGHT)];
 export const ClearLight = Template.bind({});
 ClearLight.args = {
   children: 'TEXT',
-  theme: ThemeButton.CLEAR,
+  theme: ButtonTheme.CLEAR,
 };
 ClearLight.decorators = [ThemeDecorator(Theme.LIGHT)];
 
 export const OutlineLight = Template.bind({});
 OutlineLight.args = {
   children: 'TEXT',
-  theme: ThemeButton.OUTLINE,
+  theme: ButtonTheme.OUTLINE,
 };
 OutlineLight.decorators = [ThemeDecorator(Theme.LIGHT)];
+
+export const BackgroundInvertedLight = Template.bind({});
+BackgroundInvertedLight.args = {
+  children: '>',
+  theme: ButtonTheme.INVERTED_BACKGROUND,
+  size: ButtonSize.XL,
+  square: true,
+};
+BackgroundInvertedLight.decorators = [ThemeDecorator(Theme.LIGHT)];
+
+export const BackgroundLight = Template.bind({});
+BackgroundLight.args = {
+  children: '>',
+  theme: ButtonTheme.BACKGROUND,
+  size: ButtonSize.XL,
+  square: true,
+};
+BackgroundLight.decorators = [ThemeDecorator(Theme.LIGHT)];

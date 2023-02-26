@@ -1,10 +1,10 @@
 {
   "main": "Главная",
   "about": "Информация",
-  "toggle": "Разреврнуть",
-  "language-long": "Перевести",
+  "language-long": "Русский",
   "NotFoundPage": "Страница не найдена",
   "loading": "Загрузка",
   "error-boundary": "Произошла непредвиденная ошибка",
-  "reload-page": " Обновить страницу"
+  "reload-page": " Обновить страницу",
+  "language-short": "RU"
 }

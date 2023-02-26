@@ -1,10 +1,10 @@
 {
   "main": "Main",
   "about": "About",
-  "toggle": "Collapse",
-  "language-long": "Translate",
+  "language-long": "English",
   "NotFoundPage": "Page not found",
   "loading": "Loading",
   "error-boundary": "Something went wrong",
-  "reload-page": "Reload page"
+  "reload-page": "Reload page",
+  "language-short": "EN"
 }

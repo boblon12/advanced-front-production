@@ -17,3 +17,57 @@
   background: none;
   color: var(--primary-color);
 }
+
+.background {
+  background: var(--bg-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+.backgroundInverted {
+  background: var(--inverted-bg-color);
+  color: var(--inverted-primary-color);
+  border: none;
+}
+
+.square {
+  padding: 0;
+}
+
+.size_m {
+  font: var(--font-m);
+}
+
+.square.size_m {
+  width: var(--font-line-m);
+  height: var(--font-line-m);
+  right: calc(var(--font-line-m) * -1);
+}
+
+.size_l {
+  font: var(--font-l);
+}
+
+.square.size_l {
+  width: var(--font-line-l);
+  height: var(--font-line-l);
+  right: calc(var(--font-line-l) * -1);
+}
+
+.size_xl {
+  font: var(--font-xl);
+}
+
+.square.size_xl {
+  width: var(--font-line-xl);
+  height: var(--font-line-xl);
+  right: calc(var(--font-line-xl) * -1);
+}
+
+.red {
+  color: #d33333;
+}
+
+.disabled {
+  color: gray;
+}
