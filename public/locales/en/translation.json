@@ -6,5 +6,6 @@
   "loading": "Loading",
   "error-boundary": "Something went wrong",
   "reload-page": "Reload page",
-  "language-short": "EN"
+  "language-short": "EN",
+  "login": "Login"
 }

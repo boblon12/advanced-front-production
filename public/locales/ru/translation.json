@@ -6,5 +6,6 @@
   "loading": "Загрузка",
   "error-boundary": "Произошла непредвиденная ошибка",
   "reload-page": " Обновить страницу",
-  "language-short": "RU"
+  "language-short": "RU",
+  "login": "Войти"
 }
