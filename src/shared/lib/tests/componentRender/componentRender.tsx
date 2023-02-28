@@ -6,10 +6,13 @@ import i18nextForTesting from 'shared/config/i18n/i18nForTest';
 import { ThemeProvider } from 'app/providers/ThemeProvider';
 import { Theme } from 'shared/const/theme';
 import '@/app/styles/index.scss';
+import { StateSchema, StoreProvider } from 'app/providers/StoreProvider';
+import { DeepPartial } from '@reduxjs/toolkit';
 
 interface ComponentRenderOptions {
   route?: string;
   theme?: Theme;
+  initialState?: DeepPartial<StateSchema>;
 }
 
 interface TestProviderProps {
@@ -20,16 +23,18 @@ interface TestProviderProps {
 export function TestProvider(props: TestProviderProps) {
   const { options = {}, children } = props;
 
-  const { route = '/', theme = Theme.LIGHT } = options;
+  const { route = '/', theme = Theme.LIGHT, initialState } = options;
 
   return (
-    <MemoryRouter initialEntries={[route]}>
-      <ThemeProvider initialTheme={theme}>
-        <I18nextProvider i18n={i18nextForTesting}>
-          <div className={`app ${theme}`}>{children}</div>
-        </I18nextProvider>
-      </ThemeProvider>
-    </MemoryRouter>
+    <StoreProvider initialState={initialState}>
+      <MemoryRouter initialEntries={[route]}>
+        <ThemeProvider initialTheme={theme}>
+          <I18nextProvider i18n={i18nextForTesting}>
+            <div className={`app ${theme}`}>{children}</div>
+          </I18nextProvider>
+        </ThemeProvider>
+      </MemoryRouter>
+    </StoreProvider>
   );
 }
 
