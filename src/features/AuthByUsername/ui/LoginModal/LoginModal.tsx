@@ -9,9 +9,7 @@ interface LoginModalProps {
   onClose: () => void;
 }
 
-export const LoginModal: React.FC<LoginModalProps> = (props) => {
-  const { className, onClose, isOpen } = props;
-
+export const LoginModal = ({ className, onClose, isOpen }: LoginModalProps) => {
   return (
     <Modal
       lazy
