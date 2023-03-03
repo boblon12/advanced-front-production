@@ -13,10 +13,25 @@ npm run eslint:fix ||
 
 npm run stylelint:fix ||
 (
-   echo '❌👷🔨❌ Better call Bob... Because your style bullshit ❌👷🔨❌
+   echo '❌👷🔨❌ Better call Bob... Because your css style bullshit ❌👷🔨❌
    '
    false;
 )
+
+npm run storybook:build ||
+(
+   echo '👷🔨 Building storybook .... 👷🔨
+   '
+   false;
+)
+
+npm run test:ui:ci ||
+(
+    echo '🤢🤮🤢🤮 Its F**KING RAW - Your loki test failed. 🤢🤮🤢🤮
+           Use npm run visual:report:ui to generate Loki visual report.';
+    false;
+)
+
 #
 # If everything passes... Now we can commit
 echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
