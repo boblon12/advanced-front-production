@@ -7,5 +7,7 @@
   "error-boundary": "Произошла непредвиденная ошибка",
   "reload-page": " Обновить страницу",
   "language-short": "RU",
-  "login": "Войти"
+  "login": "Войти",
+  "enter-username": "Введите имя",
+  "enter-password": "Введите пароль"
 }
