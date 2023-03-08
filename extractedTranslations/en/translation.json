@@ -2,6 +2,8 @@
   "NotFoundPage": "",
   "about": "",
   "about-page": "",
+  "auth-form": "auth-form",
+  "auth-form-error": "auth-form-error",
   "decrement": "",
   "enter-password": "enter-password",
   "enter-username": "enter-username",
@@ -11,9 +13,11 @@
   "language-short": "",
   "loading": "loading",
   "login": "login",
+  "logout": "logout",
   "main": "",
   "main-page": "",
   "reload-page": "reload-page",
   "throw-error": "throw-error",
-  "toggle": ""
+  "toggle": "",
+  "Выйти": "Выйти"
 }

@@ -2,11 +2,8 @@
   "users": [
     {
       "id": "1",
-      "username": "admin@admin.com",
-      "roles": [
-        "USER",
-        "ADMIN"
-      ],
+      "username": "admin",
+      "roles": ["USER", "ADMIN"],
       "password": "123",
       "avatar": "https://pbs.twimg.com/profile_images/540611068721364992/J4ityfdN_400x400.jpeg"
     },

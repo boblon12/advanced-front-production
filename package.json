@@ -10,7 +10,6 @@
     "start:dev:server": "node ./json-server/index.js",
     "eslint": "eslint \"**/*.{ts,tsx}\"",
     "eslint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
-
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",

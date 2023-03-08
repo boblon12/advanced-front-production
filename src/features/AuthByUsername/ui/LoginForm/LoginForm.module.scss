@@ -1,11 +1,7 @@
-.loginForm {
+.LoginForm {
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-    @media (min-width: 768px) {
-        width: 400px;
-    }
+    width: 400px;
 }
 
 .input {

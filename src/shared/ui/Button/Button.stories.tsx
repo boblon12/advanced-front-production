@@ -85,3 +85,10 @@ BackgroundLight.args = {
   square: true,
 };
 BackgroundLight.decorators = [ThemeDecorator(Theme.LIGHT)];
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  children: '>',
+  theme: ButtonTheme.OUTLINE,
+  disabled: true,
+};

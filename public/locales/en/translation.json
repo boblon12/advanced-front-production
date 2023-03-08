@@ -9,5 +9,8 @@
   "language-short": "EN",
   "login": "Login",
   "enter-username": "Enter username",
-  "enter-password": "Enter password"
+  "enter-password": "Enter password",
+  "auth-form": "Login form",
+  "auth-form-error": "You entered wrong name or password",
+  "logout": "Logout"
 }
