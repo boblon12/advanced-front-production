@@ -47,13 +47,13 @@ export const Navbar = ({ className }: NavbarProps) => {
   return (
     <div className={classNames(cls.Navbar, {}, [className])}>
       <Button
-        theme={ButtonTheme.INVERTED_BACKGROUND}
+        theme={ButtonTheme.OUTLINE}
         className={cls.links}
         onClick={onOpenModal}
       >
         {t('login')}
       </Button>
-      <LoginModal onClose={onCloseModal} isOpen={isOpen} />
+      {isOpen && <LoginModal isOpen={isOpen} onClose={onCloseModal} />}
     </div>
   );
 };
